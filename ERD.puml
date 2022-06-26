@@ -1,0 +1,10 @@
+@startuml
+!theme blueprint
+entity users {
+    * id : bigint <<PK>>
+    --
+    username : varchar
+    password : varchar
+    role : enum ('ADMIN')
+}
+@enduml
